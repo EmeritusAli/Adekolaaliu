@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="about-me.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/styless.css">
+      <!-- <link rel="stylesheet" href="css/styles.css"> -->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+      <link rel="icon" href="favicon1.ico">
+      <title>Adekola Ali | About Me</title>
+
+  </head>
+
+
+  <body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Adekola Aliu</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="about-me.html" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="hero">
+      <div class="btn-box">
+        <button id="btn1" onclick="openPJ()">About Me</button>
+        <button id="btn2" onclick="openPG()">More</button>
+        <button id="btn3" onclick="openPF()">Skills</button>
+      </div>
+      <div id="content1" class="content">
+      <div class="content-left">
+                    <h3>My name is Ali</h3>
+                    <p>I am a Data Scientist/Analyst. I am a final year student of (Mathematical) Statistics at Obafemi Awolowo University,
+                       Ile-Ife, Nigeria.
+                      I have been writing code and analyzing data daily for more than 2 years.
+                      I am looking for new opportunities to implement and increase my skills in data science/analytics and web development.
+                    </p>
+
+                    <!-- <a href="#">WATCH VIDEO</a> -->
+        </div>
+        <div class="content-right">
+          <img src="images/Ali.jpeg" alt="">
+        </div>
+      </div>
+
+      <div id="content2" class="content">
+      <div class="content-left">
+              <h3>More About Me</h3>
+              <p> New challenges don't bother me, but rather inspire, as they give me the opportunity to grow up and develop,
+                 and the habit of not give up helps me in this.
+                 Creating and building projects that solve or fix a problem is a high priority for me. I love to beat data until it speaks.
+                 I love reading books and learning new stuff.</p>
+
+
+              <!-- <a href="#">WATCH VIDEO</a> -->
+        </div>
+        <div class="content-right">
+          <img src="images/Alii.jpeg" alt="">
+        </div>
+      </div>
+      <div id="content3" class="content">
+      <div class="content-left">
+              <h1>Intro To What I Can Do</h1>
+              <p>I specialize in Data Science and Analytics.
+                I am very knowledgeable in machine learning, statistical inference, web scraping and
+                technical analysis. I'm very familiar with the following tools:
+                 Python, R, Tableau, Excel, SQL, HTML, CSS, Bootstrap, Git.</p>
+
+
+              <a href="skills.html">MORE</a>
+        </div>
+        <div class="content-right">
+          <img src="images/Alii.jpeg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/aliu-adekola-44b251119/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/EmeritusAli">Twitter</a>
+      <a class="footer-link" href="https://github.com/emeritusali">Github</a>
+      <p class="copyright">© 2022 Adekola Ali.</p>
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+
+            var content1 = document.getElementById("content1")
+      var content2 = document.getElementById("content2")
+      var content3 = document.getElementById("content3")
+
+      var btn1 = document.getElementById("btn1")
+      var btn2 = document.getElementById("btn2")
+      var btn2 = document.getElementById("btn2")
+
+
+      function openPJ(){
+        content1.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(100%)";
+        content3.style.transform = "translateX(100%)";
+        btn1.style.color = "#11999E";
+        btn2.style.color = "#000";
+        btn3.style.color = "#000";
+        content1.style.transitionDelay = "0.3s";
+        content2.style.transitionDelay = "0s";
+        content3.style.transitionDelay = "0s";
+
+      }
+
+      function openPG(){
+        content1.style.transform = "translateX(100%)";
+        content2.style.transform = "translateX(0)";
+        content3.style.transform = "translateX(100%)";
+        btn2.style.color = "#11999E";
+        btn1.style.color = "#000";
+        btn3.style.color = "#000";
+        content2.style.transitionDelay = "0.3s";
+        content1.style.transitionDelay = "0s";
+        content3.style.transitionDelay = "0s";
+      }
+
+
+      function openPF(){
+        content1.style.transform = "translateX(100%)";
+        content2.style.transform = "translateX(100%)";
+        content3.style.transform = "translateX(0)";
+        btn3.style.color = "#11999E";
+        btn2.style.color = "#000";
+        btn1.style.color = "#000";
+        content3.style.transitionDelay = "0.3s";
+        content2.style.transitionDelay = "0s";
+        content1.style.transitionDelay = "0s";
+
+      }
+
+    </script>
+
+
+
+
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="main.js"></script>
+
+
+
+
+  </body>
+</html>
