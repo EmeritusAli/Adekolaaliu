@@ -5,6 +5,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+  width:100vw;
 }
 
 h1 {
@@ -54,15 +55,21 @@ a:hover {
   background-color: #def0ff;
   position: relative;
   padding-top: 100px;
+  /* width: 100%; */
 }
 
 .middle-container {
   margin: 100px 0;
+
+
 }
 
 .bottom-container {
   background-color: #66BFBF;
   padding: 50px 0 20px;
+  width:100vw;
+  position: relaive;
+
 }
 
 .skill-row {
@@ -140,4 +147,26 @@ a:hover {
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    width:100vw;
+  }
+
+  .top_container{
+    width: 100%
+  }
+  .bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    width:100vw;
+    position: absolute;
+
+  }
+
 }
