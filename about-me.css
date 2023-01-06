@@ -35,11 +35,8 @@
   margin: 5% auto;
   
   .footer__link{
-    padding: .25rem 0;
-  position: absolute;
-  transform: translateX(100%);
-  transition: 0.3s;
-
+  padding: .25rem 0;
+  
 }
 
 .content-left{
