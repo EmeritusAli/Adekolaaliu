@@ -33,15 +33,15 @@
   justify-content: center;
   align-items: center;
   margin: 5% auto;
-  
-  .footer__link{
-  padding: .25rem 0;
   position: absolute;
   transform: translateX(100%);
   transition: 0.3s;
 
 }
 
+  .footer__link{
+  padding: .25rem 0;
+}
 .content-left{
   flex-basis: 50%;
 }
